@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Logo className="mb-4" />
             <p className="text-muted-foreground mb-4 max-w-xs">
-              Engineering Intelligence. Empowering Solutions through innovation and expertise.
+              From Circuits to Code — Precision Meets Innovation in electrical engineering and technology.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (

@@ -20,14 +20,14 @@ export default function HeroSection() {
           >
             <div className="mb-6">
               <span className="px-4 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-primary/20 to-secondary/20 text-primary">
-                Engineering Intelligence. Empowering Solutions.
+                From Circuits to Code — Precision Meets Innovation
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
               Building <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">future-proof</span> solutions for tomorrow's challenges
             </h1>
             <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-              Electrical Engineer · AI Developer · Data Scientist building innovative solutions for industries, startups, and academia.
+              Electrical Engineer specializing in power system design, load calculations, and protection systems according to IEC and NEC standards.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
@@ -87,9 +87,11 @@ export default function HeroSection() {
                   transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
                   className="w-[280px] h-[280px] rounded-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden"
                 >
-                  <span className="text-8xl text-primary/30">
-                    <i className="fas fa-user"></i>
-                  </span>
+                  <img 
+                    src="/attached_assets/WhatsApp Image 2025-04-12 at 14.47.34_aee1a8ca.jpg" 
+                    alt="Abdelrahman Emad" 
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
               </div>
               

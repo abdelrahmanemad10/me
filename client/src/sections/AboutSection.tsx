@@ -20,11 +20,11 @@ export default function AboutSection() {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Engineering Intelligence</h2>
             
             <p className="text-muted-foreground mb-4">
-              I'm an Electrical Engineer with a passion for AI, machine learning, and data science. My journey has taken me from circuit design to developing sophisticated AI systems that solve real-world problems.
+              I'm an Electrical Engineer specializing in electrical distribution systems design, load calculations, and protection systems according to IEC and NEC standards. I combine technical expertise with AI and data science skills for innovative solutions.
             </p>
             
             <p className="text-muted-foreground mb-6">
-              With expertise spanning multiple disciplines, I bring a unique perspective to every project. I've worked on everything from palmprint classification systems to Arabic QA platforms and IFRS & Zakat research projects.
+              With proficiency in industry-standard software like AutoCAD, Revit MEP, and DIALux evo, I deliver comprehensive electrical designs for complex projects. I excel in short circuit analysis, voltage drop calculations, and multidisciplinary collaboration across engineering teams.
             </p>
             
             <motion.div 

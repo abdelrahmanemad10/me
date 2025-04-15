@@ -2,50 +2,50 @@
 export const features = [
   {
     id: 1,
+    title: "Electrical Systems Design",
+    description: "Comprehensive electrical distribution systems design with a focus on efficiency and compliance.",
+    icon: "bolt",
+    skills: "Load Calculations · MV/LV Panels · Cable Sizing",
+    isPrimary: true
+  },
+  {
+    id: 2,
+    title: "Software Proficiency",
+    description: "Advanced expertise in industry-standard software for electrical design and analysis.",
+    icon: "desktop",
+    skills: "AutoCAD · Revit MEP · DIALux evo",
+    isPrimary: false
+  },
+  {
+    id: 3,
+    title: "Technical Analysis",
+    description: "Thorough electrical system analysis to ensure safety, reliability, and performance.",
+    icon: "chart-line",
+    skills: "Short Circuit · Voltage Drop · Protection Systems",
+    isPrimary: true
+  },
+  {
+    id: 4,
+    title: "Standards Compliance",
+    description: "Deep knowledge of international and regional electrical standards and regulations.",
+    icon: "clipboard-check",
+    skills: "IEC · IEEE · Gulf Standards",
+    isPrimary: false
+  },
+  {
+    id: 5,
     title: "Artificial Intelligence",
-    description: "Powered by AI to deliver smart resource allocation and unparalleled efficiency.",
+    description: "AI expertise applied to electrical engineering challenges for smarter systems.",
     icon: "brain",
     skills: "ML · Deep Learning · NLP",
     isPrimary: true
   },
   {
-    id: 2,
-    title: "Ultra-Fast Processing",
-    description: "Blazing speeds with up to 3.5x faster performance for any computational task.",
-    icon: "microchip",
-    skills: "Data Analysis · HPC · Optimization",
-    isPrimary: false
-  },
-  {
-    id: 3,
-    title: "Advanced Multi-tasking",
-    description: "Seamlessly handle multiple tasks with optimal resource management for productivity.",
-    icon: "layer-group",
-    skills: "Cross-functional · Interdisciplinary · Project Management",
-    isPrimary: true
-  },
-  {
-    id: 4,
-    title: "Scalability for the Future",
-    description: "Designed for growth with sustainable architecture and customizable configurations.",
-    icon: "cube",
-    skills: "BIM · Revit · Future Tech",
-    isPrimary: false
-  },
-  {
-    id: 5,
-    title: "Work-Life Balance",
-    description: "Stay cool under heavy workloads with state-of-the-art thermal systems.",
-    icon: "wind",
-    skills: "Research · Gym · Balance",
-    isPrimary: true
-  },
-  {
     id: 6,
-    title: "Performance Excellence",
-    description: "Push the boundaries of graphics with unparalleled support for immersive experiences.",
-    icon: "gamepad",
-    skills: "High Performance · Innovation · Excellence",
+    title: "Multidisciplinary Collaboration",
+    description: "Effective collaboration with diverse engineering teams on complex projects.",
+    icon: "users",
+    skills: "Mechanical · Architectural · Civil Integration",
     isPrimary: false
   }
 ];
@@ -105,23 +105,23 @@ export const projects = [
 // About sections
 export const aboutItems = [
   {
-    title: "Education",
-    description: "Electrical Engineering with specialization in AI and Machine Learning",
+    title: "Technical Documentation",
+    description: "Complete sets of technical drawings and documentation for tender, construction, and as-built stages",
     isPrimary: true
   },
   {
-    title: "Experience",
-    description: "Industry, startup, and academic research projects across UAE and Saudi Arabia",
+    title: "Power System Design",
+    description: "Complete distribution systems including MV/LV panels, cable routing, and load balancing",
     isPrimary: false
   },
   {
-    title: "Projects",
-    description: "AI-powered solutions, data analysis systems, and intelligent applications",
+    title: "Protection Systems",
+    description: "Specialization in circuit breakers, relays, and fuses to secure electrical systems",
     isPrimary: true
   },
   {
-    title: "Mission",
-    description: "Building future-proof solutions that bridge technology and human needs",
+    title: "Standards Expertise",
+    description: "Comprehensive knowledge of IEC, IEEE, and regional Gulf electrical regulations",
     isPrimary: false
   }
 ];
@@ -131,7 +131,7 @@ export const socialLinks = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    url: "#"
+    url: "https://www.linkedin.com/in/abdelrahman-emad-6a03a9215/"
   },
   {
     name: "GitHub",
@@ -144,8 +144,8 @@ export const socialLinks = [
     url: "#"
   },
   {
-    name: "Twitter",
-    icon: "twitter",
+    name: "Instagram",
+    icon: "instagram",
     url: "#"
   }
 ];
