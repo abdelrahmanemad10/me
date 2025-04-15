@@ -141,12 +141,12 @@ export const socialLinks = [
   {
     name: "WhatsApp",
     icon: "whatsapp",
-    url: "#"
+    url: "https://wa.me/201274625276"
   },
   {
     name: "Instagram",
     icon: "instagram",
-    url: "#"
+    url: "https://www.instagram.com/abdelrahmanemad0/"
   }
 ];
 
@@ -165,7 +165,7 @@ export const contactInfo = [
   {
     icon: "phone-alt",
     title: "Phone",
-    value: "Available upon request"
+    value: "+201274625276"
   }
 ];
 
