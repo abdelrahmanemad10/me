@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/constants";
+import callCenterImage from "@assets/images (3).jpg";
+import schoolGymImage from "@assets/School-Gym-Lighting-Plan.webp";
+import commercialBuildingImage from "@assets/images (4).jpg";
+import electricalDiagramImage from "@assets/draw-electrical-design-plan-single-line-diagram-load-calculation.jpg";
 
 export default function ProjectsSection() {
   const containerVariants = {
@@ -37,7 +41,7 @@ export default function ProjectsSection() {
           </span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            A showcase of my diverse skills across AI, data science, and electrical engineering.
+            Smart design. Scalable infrastructure. Real-world impact.
           </p>
         </motion.div>
 
@@ -48,17 +52,39 @@ export default function ProjectsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          {projects.map((project) => (
-            <motion.div key={project.id} variants={itemVariants}>
-              <ProjectCard
-                title={project.title}
-                description={project.description}
-                category={project.category}
-                tags={project.tags}
-                isPrimary={project.isPrimary}
-              />
-            </motion.div>
-          ))}
+          {projects.map((project) => {
+            // Map the imageType to the corresponding image import
+            let projectImage;
+            switch(project.imageType) {
+              case 'callCenter':
+                projectImage = callCenterImage;
+                break;
+              case 'schoolGym':
+                projectImage = schoolGymImage;
+                break;
+              case 'commercial':
+                projectImage = commercialBuildingImage;
+                break;
+              case 'diagram':
+                projectImage = electricalDiagramImage;
+                break;
+              default:
+                projectImage = undefined;
+            }
+            
+            return (
+              <motion.div key={project.id} variants={itemVariants}>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  category={project.category}
+                  tags={project.tags}
+                  isPrimary={project.isPrimary}
+                  image={projectImage}
+                />
+              </motion.div>
+            );
+          })}
         </motion.div>
 
         <motion.div 

@@ -54,51 +54,57 @@ export const features = [
 export const projects = [
   {
     id: 1,
+    title: "Call Center Project",
+    description: "Designed MV/LV system with generator backup and ATS, sized transformers, cables, and protection devices for 24/7 reliability.",
+    category: "Electrical",
+    tags: ["MV/LV System", "Generator Backup", "ATS"],
+    isPrimary: true,
+    imageType: "callCenter"
+  },
+  {
+    id: 2,
+    title: "School Project",
+    description: "Campus-wide electrical distribution and lighting design using DIALux evo for optimal lux levels and energy efficiency.",
+    category: "Lighting",
+    tags: ["DIALux", "Education Safety", "IEC Standards"],
+    isPrimary: false,
+    imageType: "schoolGym"
+  },
+  {
+    id: 3,
+    title: "Commercial/Residential Building",
+    description: "Smart electrical distribution for high-rise building with MDB, SMDBs and DBs, optimized cable routing and space utilization.",
+    category: "Distribution",
+    tags: ["AutoCAD", "Revit", "Energy Efficient"],
+    isPrimary: true,
+    imageType: "commercial"
+  },
+  {
+    id: 4,
+    title: "System Single-Line Diagram",
+    description: "Detailed electrical distribution diagram showing transformer ratings, panel connections, and load calculations.",
+    category: "Technical",
+    tags: ["System Design", "Load Calculation", "Short Circuit"],
+    isPrimary: false,
+    imageType: "diagram"
+  },
+  {
+    id: 5,
     title: "Palmprint Classifier",
     description: "An advanced machine learning system for accurate biometric identification using palmprint patterns.",
     category: "AI",
     tags: ["Machine Learning", "Computer Vision", "Python"],
-    isPrimary: true
+    isPrimary: true,
+    imageType: "default"
   },
   {
-    id: 2,
-    title: "AI Strategy Recommender",
-    description: "A decision support system developed for Saudi Arabian businesses to optimize AI implementation strategies.",
-    category: "Strategy",
-    tags: ["Decision Support", "Predictive Analytics", "NLP"],
-    isPrimary: false
-  },
-  {
-    id: 3,
-    title: "Medical Lab Website (UAE)",
-    description: "A comprehensive web platform for a UAE medical laboratory featuring appointment scheduling and result tracking.",
-    category: "Web",
-    tags: ["UI/UX", "React", "Node.js"],
-    isPrimary: true
-  },
-  {
-    id: 4,
-    title: "IFRS & Zakat Research",
-    description: "Innovative research on integrating International Financial Reporting Standards with Zakat calculations.",
-    category: "Research",
-    tags: ["Financial Analysis", "Regulatory Compliance", "Research"],
-    isPrimary: false
-  },
-  {
-    id: 5,
+    id: 6,
     title: "Arabic QA AI System",
     description: "A sophisticated natural language processing system for Arabic question answering with contextual understanding.",
     category: "NLP",
     tags: ["Arabic NLP", "Deep Learning", "TensorFlow"],
-    isPrimary: true
-  },
-  {
-    id: 6,
-    title: "Deep Learning Portfolio Optimizer",
-    description: "An intelligent financial tool that leverages deep learning to optimize investment portfolios and predict market trends.",
-    category: "Finance",
-    tags: ["Deep Learning", "Financial Modeling", "PyTorch"],
-    isPrimary: false
+    isPrimary: false,
+    imageType: "default"
   }
 ];
 

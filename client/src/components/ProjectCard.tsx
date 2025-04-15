@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 interface ProjectCardProps {
   title: string;
@@ -7,9 +8,10 @@ interface ProjectCardProps {
   category: string;
   tags: string[];
   isPrimary: boolean;
+  image?: string;
 }
 
-export default function ProjectCard({ title, description, category, tags, isPrimary }: ProjectCardProps) {
+export default function ProjectCard({ title, description, category, tags, isPrimary, image }: ProjectCardProps) {
   const color = isPrimary ? "primary" : "secondary";
   
   return (
@@ -19,18 +21,26 @@ export default function ProjectCard({ title, description, category, tags, isPrim
     >
       <div className="relative">
         <div className="w-full h-48 bg-background/50 flex items-center justify-center overflow-hidden">
-          <motion.i 
-            initial={{ scale: 0.8, opacity: 0.5 }}
-            animate={{ 
-              scale: [0.8, 1.2, 1],
-              opacity: [0.5, 0.8, 0.6]
-            }}
-            transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-            className={cn(
-              "fas fa-code text-6xl",
-              isPrimary ? "text-primary/30" : "text-secondary/30"
-            )}
-          />
+          {image ? (
+            <img 
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          ) : (
+            <motion.i 
+              initial={{ scale: 0.8, opacity: 0.5 }}
+              animate={{ 
+                scale: [0.8, 1.2, 1],
+                opacity: [0.5, 0.8, 0.6]
+              }}
+              transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+              className={cn(
+                "fas fa-code text-6xl",
+                isPrimary ? "text-primary/30" : "text-secondary/30"
+              )}
+            />
+          )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
         <div className={cn(
