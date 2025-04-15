@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { socialLinks } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import profileImage from "@assets/WhatsApp Image 2025-04-12 at 14.47.34_aee1a8ca.jpg";
 
 export default function HeroSection() {
   return (
@@ -88,7 +89,7 @@ export default function HeroSection() {
                   className="w-[280px] h-[280px] rounded-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden"
                 >
                   <img 
-                    src="/attached_assets/WhatsApp Image 2025-04-12 at 14.47.34_aee1a8ca.jpg" 
+                    src={profileImage} 
                     alt="Abdelrahman Emad" 
                     className="w-full h-full object-cover"
                   />

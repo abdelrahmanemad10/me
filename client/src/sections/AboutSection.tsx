@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { aboutItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import secondaryImage from "@assets/download (6).jpg";
 
 export default function AboutSection() {
   return (
@@ -75,24 +76,21 @@ export default function AboutSection() {
               {/* About image container */}
               <div className="w-[400px] h-[500px] rounded-2xl overflow-hidden relative z-10">
                 <motion.div 
-                  className="w-full h-full bg-gradient-to-br from-card to-background flex items-center justify-center"
+                  className="w-full h-full overflow-hidden"
                   animate={{
-                    background: [
-                      "linear-gradient(to bottom right, hsl(222.2 84% 4.9%), hsl(217 33% 17.5%))",
-                      "linear-gradient(to bottom right, hsl(224.3 76.3% 10%), hsl(215 27.9% 16.9%))",
-                      "linear-gradient(to bottom right, hsl(222.2 84% 4.9%), hsl(217 33% 17.5%))"
+                    boxShadow: [
+                      "0 0 20px rgba(255, 85, 0, 0.3)", 
+                      "0 0 40px rgba(255, 85, 0, 0.2)", 
+                      "0 0 20px rgba(255, 85, 0, 0.3)"
                     ]
                   }}
                   transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
                 >
-                  <motion.span 
-                    className="text-5xl text-foreground/10"
-                    initial={{ opacity: 0.6 }}
-                    animate={{ opacity: [0.6, 0.8, 0.6] }}
-                    transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
-                  >
-                    <i className="fas fa-user-tie"></i>
-                  </motion.span>
+                  <img 
+                    src={secondaryImage}
+                    alt="Abdelrahman Emad - Professional"
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
               </div>
               
